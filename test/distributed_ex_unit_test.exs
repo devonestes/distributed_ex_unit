@@ -1,5 +1,5 @@
 for letter <- ?A..?Z do
-  defmodule String.to_atom("Elixir.DistributedExUnitTest.Test.#{[letter]}") do
+  defmodule Module.concat([Example, Test, to_string([letter])]) do
     use ExUnit.Case, async: true
 
     test "calculates the fibonacci numbers" do
